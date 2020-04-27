@@ -36,4 +36,4 @@ for fcnt in files: #取得したファイル数分でループ
         colno+=1
     fileno+=1
 
-wb_result.save('C:\\Users\\magin\\Desktop\\Tasks\\200410_アンケート収集ツール作成\\集計結果.xlsx')
+wb_result.save('集計結果.xlsx')
