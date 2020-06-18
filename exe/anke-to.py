@@ -27,7 +27,7 @@ sheet_result.cell(1,1,"ファイル名") #1行目に項目を記載
 sheet_result.cell(1,2,testhanni)
 
 for fcnt in files: #取得したファイル数分でループ
-    wb = openpyxl.load_workbook(testpass+'\\'+fcnt) #ファイルオープン
+    wb = openpyxl.load_workbook(testpass+'\\'+fcnt, data_only=True) #ファイルオープン
     sheet_result.cell(fileno,1,fcnt) #A列にファイル名記載
     ws = wb.active #開いたシートに結果がある前提
     colno = 2  # B列から入力
